@@ -5,11 +5,38 @@
 html {
   height: 100%;
   background-color: black;
+  margin-right: 1rem;
 }
 
 body {
   margin: 1rem;
   min-height: 100%;
+  background-color: #040d13;
+  padding: 1rem;
+}
+
+h2 {
+  margin-top: 0;
+  padding: 1rem;
+}
+
+h3 {
+  margin: 0;
+}
+
+h4 {
+  margin-top: 5rem;
+  font-size: 2rem;
+  color: whitesmoke;
+  display: flex;
+  justify-content: center;
+}
+
+h5 {
+  color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
 }
 
 /***** Classes *****/
@@ -30,17 +57,24 @@ body {
   background-repeat: no-repeat;
   background-size: 100% auto;
   margin-bottom: 1rem;
+  margin-left: 1rem;
 }
 
 .react-text {
   background-color: whitesmoke;
   padding-bottom: 1rem;
+  margin: 0;
 }
 
 .fizz-text {
   background-color: whitesmoke;
   padding-bottom: 1rem;
 }
+
+.react-blog {
+  margin-bottom: 2rem;
+}
+
 /***** Image Classes *****/
 
 .apps {
@@ -59,21 +93,40 @@ body {
 .profile {
   width: 15rem;
   height: 15rem;
+  border-radius: 1rem;
 }
 
-.react-background {
-  border-radius: 2%;
-  padding-top: 1rem;
-  background-image: url(./images/react.png);
+.react-img {
+  width: 100%;
+  object-fit: cover;
+  height: 5rem;
+  overflow: hidden;
+  margin: 0;
 }
 
-.fizz-background {
-  border-radius: 5%;
-  padding-top: 1rem;
-  background-image: url(./images/code.png);
+.code-img {
+  width: 100%;
+  object-fit: cover;
+  height: 5rem;
+  overflow: hidden;
+  margin: 0;
 }
 
-/***** Text Box CSS *****/
+.logos {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.social {
+  height: 5rem;
+  width: 5rem;
+  margin: 1rem;
+}
+
+/***** Media Queries *****/
+
+/***** Quote Box CSS *****/
 
 .container {
   width: 330px;
@@ -81,7 +134,7 @@ body {
 }
 
 .quote {
-  background-color: #6b936a;
+  background-color: #a7a7a7f6;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   color: #fff;
@@ -104,7 +157,7 @@ blockquote {
 }
 
 blockquote::after {
-  border-color: transparent #6b936a transparent transparent;
+  border-color: transparent #a7a7a7c7 transparent transparent;
   border-image: none;
   border-style: solid;
   border-width: 20px;
