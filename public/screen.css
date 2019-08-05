@@ -6,6 +6,8 @@ html {
   height: 100%;
   background-color: black;
   margin-right: 1rem;
+  margin-left: 1rem;
+  font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -15,13 +17,29 @@ body {
   padding: 1rem;
 }
 
+button {
+  border-radius: 0.5rem;
+  background-color: #216bcb;
+  border-color: #216bcb;
+  color: white;
+  height: 2rem;
+  width: 10rem;
+  position: absolute;
+  right: 1rem;
+  bottom: -1rem;
+}
+
 h2 {
+  font-size: 3rem;
   margin-top: 0;
-  padding: 1rem;
+  padding-top: 0.5rem;
+  padding-left: 0.5rem;
 }
 
 h3 {
-  margin: 0;
+  margin: 1rem;
+  padding-top: 1rem;
+  font-size: 1rem;
 }
 
 h4 {
@@ -39,6 +57,10 @@ h5 {
   margin-bottom: 2rem;
 }
 
+p {
+  padding: 0.5rem;
+}
+
 /***** Classes *****/
 
 .articles {
@@ -46,10 +68,17 @@ h5 {
   padding-left: 1rem;
 }
 
+.blog-header {
+  display: flex;
+  margin-bottom: -2rem;
+  margin-top: -0.3rem;
+}
+
 .combo {
   padding: 2rem;
   display: flex;
   justify-content: center;
+  flex-flow: row;
 }
 
 .header {
@@ -73,6 +102,12 @@ h5 {
 
 .react-blog {
   margin-bottom: 2rem;
+  position: relative;
+}
+
+.fizz-buzz-blog {
+  margin-bottom: 2rem;
+  position: relative;
 }
 
 /***** Image Classes *****/
@@ -81,12 +116,15 @@ h5 {
   margin-top: 0.5rem;
   padding: 1rem;
   display: flex;
+  justify-content: center;
 }
 
 .applications {
   background-color: rgba(0, 0, 0, 0.274);
-  padding: 2rem;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
   display: flex;
+  flex-flow: wrap;
   justify-content: center;
 }
 
@@ -114,6 +152,7 @@ h5 {
 
 .logos {
   display: flex;
+  flex-flow: wrap;
   justify-content: center;
   padding: 2rem;
 }
@@ -123,8 +162,6 @@ h5 {
   width: 5rem;
   margin: 1rem;
 }
-
-/***** Media Queries *****/
 
 /***** Quote Box CSS *****/
 
@@ -166,4 +203,42 @@ blockquote::after {
   display: block;
   right: 75%;
   position: relative;
+  rotate: 90deg;
+}
+
+/***** Media Queries *****/
+
+@media (max-width: 700px) {
+  .profile {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 1rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .quote {
+    background-color: #a7a7a7f6;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: #fff;
+    margin: 0;
+    padding: 1rem;
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 700px) {
+  .container {
+    width: 200px;
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 700px) {
+  h5 {
+    padding-left: 5rem;
+    padding-right: 5rem;
+    line-height: 1.5rem;
+  }
 }
