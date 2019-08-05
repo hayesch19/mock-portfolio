@@ -29,6 +29,12 @@ button {
   bottom: -1rem;
 }
 
+button:hover {
+  border-style: solid;
+  border-width: 2px;
+  border-color: #f3d516;
+}
+
 h2 {
   font-size: 3rem;
   margin-top: 0;
@@ -126,6 +132,12 @@ p {
   display: flex;
   flex-flow: wrap;
   justify-content: center;
+}
+
+.social:hover {
+  border-style: solid;
+  border-radius: 100%;
+  border-color: #f3d516;
 }
 
 .profile {
